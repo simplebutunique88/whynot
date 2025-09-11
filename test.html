@@ -6,9 +6,40 @@
         background-image: linear-gradient(to bottom, cornflowerblue 0%, cornsilk 25%, lightcyan 50%, silver 75%, white 100%);
         min-height: 100vh;
       }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color: sky blue;
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: silver;
+        color: silver;
+        padding: 20px;
+        text-align: center;
+      }
+  
     </style>
   </head>
   <body>
+    <header>
+      <div class = "grid-container">
+        <div class = "grid-item">
+          <form>
+            <label for = "user">Username:</label>
+            <input type = "text" id = "user" name = "user" placeholder = "Enter your username" required>
+            <br><br>
+            <label for = "pass">Password:</label>
+            <input type = "password" id = "pass" name = "pass" placeholder = "Enter your password" required>
+            <br><br>
+            <input type = "submit" value = "Login">
+          </form>
+        </div>
+        <div class = "grid-item">
+          
+          </form>
+    </header>
     <p>This is a new page</p>
   </body>
 </html>
